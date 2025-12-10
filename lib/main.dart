@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:mynoteds/screen/home/model_ui.dart';
 import 'package:mynoteds/screen/splash/ui.dart';
 
 void main() {
