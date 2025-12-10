@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:mynoteds/controller/add.dart';
 import 'package:mynoteds/controller/get.dart';
+import 'package:mynoteds/controller/modelget.dart';
+import 'package:mynoteds/model/note_model.dart';
 import 'package:mynoteds/screen/home/weidgets/notedCardWeigets.dart';
 import 'package:mynoteds/screen/noted_add_edit/ui.dart';
 
@@ -18,11 +20,15 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List noteDatas = [];
+
+  //Model Api Use
+  List<NoteModel> list = [];
   bool isLoading = false;
 
   dataFeatchs() async {
     isLoading = true;
     var data = await SetNoteData().getData();
+    var list = ModelgetData().getModelApi();
 
     noteDatas = data;
     isLoading = false;
