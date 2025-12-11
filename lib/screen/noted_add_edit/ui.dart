@@ -45,7 +45,7 @@ class _NoteAddEditScreenState extends State<NoteAddEditScreen> {
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: TextField(
               controller: NoteC,
-              maxLines: 30,
+              maxLines: 25,
               style: TextStyle(
                 color: Colors.white
               ),

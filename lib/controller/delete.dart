@@ -17,6 +17,7 @@ class DeleteNoteApi{
         EasyLoading.showError("Already Deleted or wrong Id");
       }
 
+
     }
         catch(e){
       log("Error:  $e");

@@ -19,7 +19,6 @@ class NoteDetailsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
               // HEADER
               Text(
                 "Note Details",
